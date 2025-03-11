@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##   Rphisher 	: 	Automated Phishing Tool
-##   Author 	: 	TREDWOODS KENYAN
+##   Author 	: 	REDWOODS KENYAN
 ##   Version 	: 	2.3.5
 ##   Github 	: 	https://github.com/KenyanRedwoods01/redkenzphisher
 
